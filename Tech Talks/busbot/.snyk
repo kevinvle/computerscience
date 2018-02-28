@@ -1,0 +1,24 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.10.2
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  'npm:hoek:20180212':
+    - botbuilder > jsonwebtoken > joi > hoek:
+        reason: None given
+        expires: '2018-03-30T22:42:07.975Z'
+    - botbuilder > jsonwebtoken > joi > topo > hoek:
+        reason: None given
+        expires: '2018-03-30T22:42:07.975Z'
+  'npm:mime:20170907':
+    - tfl.api > superagent > mime:
+        reason: None given
+        expires: '2018-03-30T22:42:07.975Z'
+  'npm:qs:20170213':
+    - tfl.api > superagent > qs:
+        reason: None given
+        expires: '2018-03-30T22:42:07.975Z'
+  'npm:superagent:20170807':
+    - tfl.api > superagent:
+        reason: None given
+        expires: '2018-03-30T22:42:07.975Z'
+patch: {}
