@@ -4,14 +4,18 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Lilian Kasem",
   "license": "ISC",
   "dependencies": {
     "botbuilder": "^3.2.3",
     "request": "^2.74.0",
-    "restify": "^4.1.1",
-    "tfl.api": "^1.5.1"
-  }
+    "restify": "^5.0.1",
+    "tfl.api": "^1.5.1",
+    "snyk": "^1.69.10"
+  },
+  "snyk": true
 }
